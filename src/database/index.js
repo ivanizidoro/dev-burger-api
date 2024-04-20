@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import configDatabase from '../config/database';
 
 import User from '../app/models/User';
-import Product from '../app/models/Porduct';
+import Product from '../app/models/Product';
 import Category from '../app/models/Category';
 
 
@@ -22,7 +22,7 @@ class Database {
     }
 
     mongo() {
-        this.mongoConnection = mongoose.connect('mongodb://localhost:53913/devburger',)
+        this.mongoConnection = mongoose.connect('mongodb://localhost:27017/devburger',)
     }
 }
 
